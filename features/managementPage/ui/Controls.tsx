@@ -1,5 +1,4 @@
-import { text } from "@/styles/Text.styles";
-import { StyleSheet, View, Button, Text } from "react-native";
+import { Button, StyleSheet, View } from "react-native";
 
 const Controls = () => {
     return (

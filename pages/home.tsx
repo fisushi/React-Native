@@ -1,7 +1,7 @@
-import Tale from "@/componets/Tale";
+import Tale from "@/features/homePage/ui/Tale";
 import { ScrollView, View } from "react-native";
 
-import Footer from "@/layouts/Footer";
+import Footer from "@/widgets/Footer";
 import { useNavigation } from "@react-navigation/native";
 
 

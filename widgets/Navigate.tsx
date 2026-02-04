@@ -1,7 +1,5 @@
-import Home from "@/app/home";
-import Management from "@/app/management";
-
-
+import Home from "@/pages/home";
+import Management from "@/pages/management";
 
 // import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";

@@ -1,5 +1,5 @@
+import { COLORS } from "@/shared/lib/constant/colors";
 import { StyleSheet } from "react-native";
-import { COLORS } from "@/constant/ui";
 
 export const text = StyleSheet.create({
     light: {

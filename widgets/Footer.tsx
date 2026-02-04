@@ -1,5 +1,5 @@
+import { COLORS } from "@/shared/lib/constant/colors";
 import React from 'react';
-import { COLORS } from "@/constant/ui";
 import { Button, StyleSheet, View } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";

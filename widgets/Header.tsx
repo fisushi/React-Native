@@ -1,7 +1,6 @@
-import { Text, View } from "react-native";
-import { text } from "@/styles/Text.styles";
-import { StyleSheet } from "react-native";
-import { COLORS } from "@/constant/ui";
+import { COLORS } from "@/shared/lib/constant/colors";
+import { text } from "@/shared/lib/styles/Text.styles";
+import { StyleSheet, Text, View } from "react-native";
 
 const Header = () => {
     return (

@@ -1,7 +1,7 @@
-import Footer from "@/layouts/Footer";
-import { ScrollView, Text, View, StyleSheet } from "react-native";
-import Gallary from "@/componets/Gallery";
-import Controls from "@/componets/Controls"
+import Controls from "@/features/managementPage/ui/Controls";
+import Gallary from "@/features/managementPage/ui/Gallery";
+import Footer from "@/widgets/Footer";
+import { Text, View } from "react-native";
 
 export default function Management() {
   return (
