@@ -1,0 +1,12 @@
+{
+    "cat": {
+        "imageUrl": "https://www.radionetplus.ru/uploads/posts/2013-12/1387478876_krasivye-fotki-1.jpeg",
+        "name": "Cat",
+        "Description": "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
+    },
+    "kitty": {
+        "imageUrl": "https://www.radionetplus.ru/uploads/posts/2013-12/thumbs/1387478932_krasivye-fotki-1.jpg",
+        "name": "kitty",
+        "Description": "some text, a very important text, that won't be read"
+    }
+}

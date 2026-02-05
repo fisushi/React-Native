@@ -1,13 +1,31 @@
+import axios from "axios";
+import React, { useEffect, useState } from 'react';
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 
 const width: number = Dimensions.get('window').width;
 const vw = (percentage: number) => width * (percentage / 100);
+const baseUrl: string = 'http://localhost:3000/kitty'
+
+axios.get(baseUrl).then((res) => {
+  console.log(res.data)
+})
 
 const Tale = () => {
+    const [data, setData] = useState(null)
+
+    useEffect(() => {
+        axios.get(baseUrl)
+        .then(respons => {
+            setData(respons.data)
+        })
+        .catch(error => console.error(error))
+    }, [])
+    console.log(data)
+
     return (
         <View style={style.container}>
             <Image
-                source={require('@/assets/images/Matvey.jpg')}
+                source={{ uri: 'https://www.radionetplus.ru/uploads/posts/2013-12/thumbs/1387478932_krasivye-fotki-1.jpg' }}
                 style={style.image}
             />
             <View style={style.box}>
@@ -47,7 +65,5 @@ const style = StyleSheet.create({
         height: "100%",
     }
 })
-
-
 
 export default Tale
