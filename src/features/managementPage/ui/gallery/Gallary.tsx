@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from "react-native";
 
-const Gallary = () => {
+export const Gallary = () => {
     return (
         <View style={style.container}>
             <Text style={style.text}>{'<'}</Text>
@@ -31,5 +31,3 @@ const style = StyleSheet.create({
     fontSize: 36,
   }
 })
-
-export default Gallary

@@ -1,9 +1,18 @@
-import Controls from "@/features/managementPage/ui/Controls";
-import Gallary from "@/features/managementPage/ui/Gallery";
-import Footer from "@/widgets/Footer";
+import { Controls } from "@/features/managementPage/ui/controls/";
+import { Gallary } from "@/features/managementPage/ui/gallery/";
+import { Footer } from "@/widgets/footer";
 import { Text, View } from "react-native";
 
-export default function Management() {
+
+// import { loadManagement } from '@/widgets/footer/Footer'
+
+import { useNavigation } from "@react-navigation/native";
+
+
+
+export const Management = () => {
+  const navigation: any = useNavigation();
+  // if (!loadManagement) navigation.navigate("ManagementScreen")
   return (
     <View style={{flex: 1}}>
       <View style={{flex: 1,}}>

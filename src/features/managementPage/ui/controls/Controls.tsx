@@ -1,6 +1,6 @@
 import { Button, StyleSheet, View } from "react-native";
 
-const Controls = () => {
+export const Controls = () => {
     return (
         <View style={style.container}>
             <Button title="                  " 
@@ -24,5 +24,3 @@ const style = StyleSheet.create({
     gap: 50,
   }
 })
-
-export default Controls

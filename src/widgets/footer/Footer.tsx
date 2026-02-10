@@ -1,14 +1,15 @@
-import { COLORS } from "@/shared/lib/constant/colors";
+import { COLORS } from "@/shared/lib/constant";
 import React from 'react';
 import { Button, StyleSheet, View } from "react-native";
 
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 
-const Footer = () => {
+export const Footer = () => {
     const navigation: any = useNavigation();
     
     // const route: any = useRoute();
 
+ 
 
     const loadManagement = () => {
         // if (route.name === "HomeScreen") 
@@ -57,5 +58,3 @@ const style = StyleSheet.create({
         alignItems: "center",
     }
 })
-
-export default Footer

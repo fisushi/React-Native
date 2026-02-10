@@ -5,3 +5,4 @@ export const COLORS = {
     FOOTER_BACKGROUND: "#292929",
     BUTTON_BACKGROUND: "#6e6e6e"
 }
+

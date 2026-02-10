@@ -1,8 +1,8 @@
-import { COLORS } from "@/shared/lib/constant/colors";
+import { COLORS } from "@/shared/lib/constant/";
 import { text } from "@/shared/lib/styles/Text.styles";
 import { StyleSheet, Text, View } from "react-native";
 
-const Header = () => {
+export const Header = () => {
     return (
         <View style={style.container}>
             <View style={style.box}>
@@ -33,5 +33,3 @@ const style = StyleSheet.create({
         alignItems: "center",
     }
 })
-
-export default Header;
