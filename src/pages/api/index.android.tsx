@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl: string = 'http://localhost:3000'
+const baseUrl: string = 'http://10.0.2.2:3000'
 const API = axios.create({ baseURL: baseUrl })
 
 export const getData = async () => {
