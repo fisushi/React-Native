@@ -12,5 +12,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts", 
-    "src/widgets/footer/Footer.tsx", "src/pages/api/index.tsx"  ]
+    "src/widgets/footer/footer.tsx", "src/pages/home/api/index.tsx"  ]
 }

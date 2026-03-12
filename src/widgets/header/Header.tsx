@@ -1,5 +1,5 @@
-import { COLORS } from "@/shared/lib/constant/";
-import { text } from "@/shared/lib/styles/Text.styles";
+import { COLORS } from "@/shared/constant";
+import { text } from "@/shared/styles/Text.styles";
 import { StyleSheet, Text, View } from "react-native";
 
 export const Header = () => {

@@ -1,42 +1,45 @@
-import { COLORS } from "@/shared/lib/constant";
-import React from 'react';
-import { Button, StyleSheet, View } from "react-native";
+import { COLORS } from "@/shared/constant"
+import { Button, StyleSheet, View } from "react-native"
 
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native"
 
 export const Footer = () => {
-    const navigation: any = useNavigation();
+    const navigation: any = useNavigation()
+    const route: any = useRoute()
+
+    const loadHome = () => {
+        route.name !== "HomeScreen" ? navigation.goBack() : null
+    }
     
-    // const route: any = useRoute();
-
- 
-
     const loadManagement = () => {
-        // if (route.name === "HomeScreen") 
-        // console.log(navigation.navigate)
         navigation.navigate("ManagementScreen")
     }
 
-    const loadHome = () => {
-        // if (route.name != "HomeScreen") 
-        // navigation.navigate("HomeScreen")
-        navigation.goBack()
-    }
+    // const loadTale = () => {
+    //     navigation.navigate("TaleScreen")
+    // }
 
     return (
         <View style={style.container}>
             <View style={style.box}>
                 <Button
                  color={COLORS.BUTTON_BACKGROUND}
-                 title="Библиотека"
+                 title="E"
                  onPress={loadHome}
                  />
             </View>
             <View style={style.box}>
                 <Button
                  color={COLORS.BUTTON_BACKGROUND}
-                 title="Управление"
+                 title="B"
                  onPress={loadManagement}
+                 />
+            </View>
+            <View style={style.box}>
+                <Button
+                 color={COLORS.BUTTON_BACKGROUND}
+                 title="*"
+                 onPress={() => {}}
                  />
             </View>
         </View>
@@ -53,7 +56,7 @@ const style = StyleSheet.create({
         alignItems: "center",
     },
     box: {
-        width: "40%",
+        width: "30%",
         justifyContent: "center",
         alignItems: "center",
     }
