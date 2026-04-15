@@ -1,14 +1,15 @@
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import { useNavigation } from "@react-navigation/native"
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 // Entities
 import { Poster } from "@/entities/poster/ui"
-import { Tale } from "@/entities/tale/ui"
 // Widgets
 import { Footer } from "@/widgets/footer"
 // Get data from API
-import { useTale } from "../model"
 import { COLORS } from "@/shared/constant"
-  
+import { useTale } from "../model"
+// Entities
+import { Tale } from "@/entities/tale/ui"
+
 export const Home = () => {
   const { dataSheet, dataTale } = useTale()
   const navigation = useNavigation<any>()
