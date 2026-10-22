@@ -1,4 +1,5 @@
 import { Image, StyleSheet, Text, View } from "react-native"
+import { COLORS } from "@/shared/constant"
 
 interface taleList {
     imageUrl: string,
@@ -14,11 +15,11 @@ export const Tale = ( {imageUrl, name, author}: taleList ) => {
                 style={style.image}
             />
             <Text
-                style={{flex: 1, width: '100%'}}>
+                style={{flex: 1, width: '100%', color: COLORS.TEXT}}>
                 {name}
             </Text>
             <Text
-                style={{width: '100%', color: "#666666"}}>
+                style={{width: '100%', color: COLORS.AUTOR_TEXT}}>
                 {author}
             </Text>
         </View>

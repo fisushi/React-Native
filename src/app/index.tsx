@@ -2,19 +2,15 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { View } from "react-native";
 // import pages
-import { Home } from "@/pages/home/ui/home";
+import Home from "@/pages/home/ui/home";
 import { Management } from "@/pages/manegement/management";
 import { ScreenOfTale } from "@/pages/screen-of-tale/ui";
-// import widgetes
-
 
 type RootStackParamList = {
   HomeScreen: undefined,
-  ManagementScreen: undefined,
+  ManagementScreen: { imageUrl: string; name: string; author: string },
   TaleScreen: { imageUrl: string; name: string; author: string },
 };
-
-
 
 const Index = () => {
   const Stack = createStackNavigator<RootStackParamList>()
